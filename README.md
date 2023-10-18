@@ -1,0 +1,2 @@
+# som-lauftext
+Lauftext implementierung
