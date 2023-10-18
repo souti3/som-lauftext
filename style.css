@@ -1,0 +1,28 @@
+h1 { color: green}
+
+.textboarder {
+    border: 0.5em;
+    border-color: black;
+    border-style: solid;
+    height: 10em;
+    width: 30em;
+    position: relative;
+}
+
+.firstLine {
+    background-color: green;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    float:left; 
+    display:inline;
+}
+
+.secondLine {
+    background-color: red;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    float:left; 
+    display:inline; 
+}
