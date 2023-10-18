@@ -9,20 +9,11 @@ h1 { color: green}
     position: relative;
 }
 
-.firstLine {
+.pixelElement {
     background-color: green;
     height: 1em;
     width: 1em;
     border-radius: 50%;
     float:left; 
     display:inline;
-}
-
-.secondLine {
-    background-color: red;
-    height: 1em;
-    width: 1em;
-    border-radius: 50%;
-    float:left; 
-    display:inline; 
 }
