@@ -5,12 +5,11 @@ const numOfPixelRows = 10;
 const container = document.getElementById("textboarder");
 
 // Loop to create and append elements
-for (let i = 0; i < numOfPixelColumns; i++) {
-    for (let j = 0; j < numOfPixelRows; j++) {
+for (let i = 0; i < numOfPixelRows; i++) {
+    for (let j = 0; j < numOfPixelColumns; j++) {
         const divFirstLine = document.createElement("div");
         divFirstLine.className = "pixelElement";
-        divFirstLine.id="" + i + j;
+        divFirstLine.id=String(i).padStart(2, '0') + String(j).padStart(2, '0');
         container.appendChild(divFirstLine);
     }
-    
 }
