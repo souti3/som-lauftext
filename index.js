@@ -14,10 +14,48 @@ for (let i = 0; i < numOfPixelRows; i++) {
     }
 }
 
-function illuminatePixel(pixelID) {
-    document.getElementById(pixelID).classList.add('luminousPixel');
+/**
+ * takes an Array with the IDs as String and
+ * forwards it to the iluminatePixel function
+ * in order to set a special color as background
+ * color for the pixel.
+ * illuminate(["0408", "0409", "0410", "0510", "0610", "0609", "0608", "0708", "0808", "0809", "0810", "0910"]);
+ * @param {Array.String} pixelIdArray 
+ */
+function illuminate(pixelIdArray) {
+    console.log(pixelIdArray);
+    pixelIdArray.forEach(illuminatePixel);
 }
 
-function darkenPixel(pixelID) {
-    document.getElementById(pixelID).classList.remove('luminousPixel');
+/**
+ * takes an Array with the IDs as String and
+ * forwards it to the darkenPixel function
+ * in order to set the normal background
+ * color for the pixel
+ * darken(["0408", "0409", "0410", "0510", "0610", "0609", "0608", "0708", "0808", "0809", "0810", "0910"]);
+ * @param {Array.String} pixelIdArray 
+ */
+function darken(pixelIdArray) {
+    pixelIdArray.forEach(darkenPixel);
+}
+
+/**
+ * takes the pixelId as String and add an
+ * additional class to the corresponding element
+ * @param {String} pixelId 
+ */
+function illuminatePixel(pixelId) {
+    console.log(pixelId);
+    // call: illuminatePixel("0408")
+    document.getElementById(pixelId).classList.add('luminousPixel');
+}
+
+/**
+ * takes the pixelId as String and removes the
+ * additional class from the corresponding element
+ * @param {String} pixelId 
+ */
+function darkenPixel(pixelId) {
+    // call: darkenPixel("0408")
+    document.getElementById(pixelId).classList.remove('luminousPixel');
 }
