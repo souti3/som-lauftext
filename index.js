@@ -13,3 +13,11 @@ for (let i = 0; i < numOfPixelRows; i++) {
         container.appendChild(divFirstLine);
     }
 }
+
+function illuminatePixel(pixelID) {
+    document.getElementById(pixelID).classList.add('luminousPixel');
+}
+
+function darkenPixel(pixelID) {
+    document.getElementById(pixelID).classList.remove('luminousPixel');
+}
